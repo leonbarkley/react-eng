@@ -1,0 +1,15 @@
+<html>
+<head>
+<scipt>
+function myFunction(){
+    document.getElementById("demo").innerHTML = "Paragraph changed";
+}
+</scipt>
+</head>
+<body>
+<h2> Demo Javescipt in Head</h2>
+<p id = "demo">A Paragraph</p>
+<button type = "button onclick= ""myFunction()>Try it </button>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OnlineJobs.ph JSON Extractor</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <div class="logo">OJ</div>
+      <div>
+        <h1>Job Extractor</h1>
+        <p>OnlineJobs.ph + JobStreet Philippines</p>
+      </div>
+    </header>
+
+    <div class="notice" id="notice">
+      Open an individual OnlineJobs.ph or JobStreet Philippines job listing, then click Extract.
+    </div>
+
+    <button class="primary" id="extractBoth" type="button">
+      Extract &amp; Export Both
+    </button>
+    <button class="secondary" id="extractOnly" type="button">
+      Extract Only
+    </button>
+
+    <div class="actions">
+      <button id="copy" type="button" disabled>Copy JSON</button>
+      <button id="download" type="button" disabled>Download JSON</button>
+    </div>
+
+    <div class="result-heading">
+      <label for="jsonOutput">JSON preview</label>
+      <span id="fieldCount"></span>
+    </div>
+    <textarea id="jsonOutput" spellcheck="false" readonly
+      placeholder="Your extracted JSON will appear here..."></textarea>
+
+    <footer>
+      <span>Runs locally in your browser.</span>
+      <span>v1.1.0</span>
+    </footer>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
